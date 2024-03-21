@@ -1,0 +1,74 @@
+/* Estilos para o body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o container principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Estilos para os inputs e botões */
+input[type="number"],
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a pista */
+#track {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para os carros */
+.car {
+    width: 50px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: left linear;
+}
+
+#car1 { top: 20px; background-image: url('./McQueen.webp'); }
+#car2 { top: 80px; background-image: url('./Boost.webp'); }
+#car3 { top: 140px; background-image: url('./DocHudson.webp'); }
+#car4 { top: 200px; background-image: url('./ChickHicks.webp'); }
+#car5 { top: 260px; background-image: url('./TheKing.webp'); }
+
+/* Estilos para o título */
+h1 {
+    margin-bottom: 20px;
+}

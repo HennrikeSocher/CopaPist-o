@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Corrida de Carros</h1>
+    <div>
+        <label for="betAmount">Valor da Aposta:</label>
+        <span id="userMoneyDisplay"></span>
+        <input type="number" id="betAmount" min="1" value="1">
+        <button onclick="placeBet()">Apostar</button>
+    </div>
+    <div id="track">
+        <div class="car" id="car1"></div>
+        <div class="car" id="car2"></div>
+        <div class="car" id="car3"></div>
+        <div class="car" id="car4"></div>
+        <div class="car" id="car5"></div>
+    </div>
+    <div>
+        <button onclick="restartRace()">Reiniciar Corrida</button>
+        <button onclick="restartGame()">Reiniciar Jogo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
