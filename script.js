@@ -32,10 +32,13 @@ function startRace(selectedCar) {
 
     let raceInterval = setInterval(function() {
         cars.forEach(function(car, index) {
-            let distance = Math.floor(Math.random() * 10) + 1;
-            car.style.left = parseInt(car.style.left || 0) + distance + 'px';
+            let carLeft = parseInt(car.style.left) || 0;
+            let distanceToFinish = finishLine - carLeft;
+            let speed = Math.min(Math.random() * 20, distanceToFinish); // Ajuste de velocidade
+            carLeft += speed;
+            car.style.left = carLeft + 'px';
 
-            if (parseInt(car.style.left) >= finishLine && winner === 0) {
+            if (carLeft >= finishLine && winner === 0) {
                 winner = index + 1;
                 clearInterval(raceInterval);
                 if (winner == selectedCar) {

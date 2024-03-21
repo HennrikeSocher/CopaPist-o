@@ -29,7 +29,7 @@ button {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #b62020;
     color: white;
     transition: background-color 0.3s;
 }
@@ -38,29 +38,38 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Estilos para a pista */
+.userAmount {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+
 #track {
     width: 90%;
     height: 300px;
-    border: 1px solid #ccc;
-    background-color: #f2f2f2;
+    border: 1px solid #d9ff03;
+    background-color: #464646;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Estilos para os carros */
+
 .car {
-    width: 50px;
+    width: 50px; /* Largura original dos carros */
     height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     left: 0;
     bottom: 0;
-    transition: left linear;
+    transition: left linear; /* Adicionando transição suave */
 }
+
 
 #car1 { top: 20px; background-image: url('./McQueen.webp'); }
 #car2 { top: 80px; background-image: url('./Boost.webp'); }
