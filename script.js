@@ -16,6 +16,7 @@ function placeBet() {
     if (userMoney >= betAmount) {
         let selectedCar = prompt("Em qual carro você deseja apostar? (1-5)");
         if (selectedCar >= 1 && selectedCar <= 5) {
+            restartRace()
             startRace(selectedCar);
         } else {
             alert("Por favor, selecione um carro válido.");
